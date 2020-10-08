@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/dollar.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Donate</title>
+</head>
+<style>
+    body {
+        background-image: url(images/donate-img.jpeg);
+        background-size: cover;
+        color: #fff;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper {
+        margin: 150px auto;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .btn3 {
+        padding: 15px 100px;
+        margin: 80px 10px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #000;
+        -webkit-transform: scaleX(0.3);
+        transform: scaleX(0.3);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .btn3:hover::before {
+        opacity: 1;
+        background-color: #edebeb;
+         border-radius: 5px;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        transition: -webkit-transform 0.8s cubic-bezier(0.08, 0.35, 0.13, 1.02),
+            opacity 0.4s;
+        transition: transform 0.8s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+    }
+    
+</style>
+<body>
+    <div class="wrapper">
+        <h2>Web Development & Designing Internship <br> @ The Sparks Foundation </h2>
+        <a href="paymentPage.html" class="btn3">
+            DONATE
+        </a>
+    </div>
+</body>
+</html>
